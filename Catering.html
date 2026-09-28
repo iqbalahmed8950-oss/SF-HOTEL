@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+}
+
+.footer-ahmedia{
+  background: radial-gradient(ellipse at top left, #1a3a5f 0%, #0f0f1a 30%, #2a0a1a 70%, #3d1a3a 100%);
+  background-color: #120a1f;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo */
+.footer-logo h1{
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #d4a654;
+  text-shadow: 0 2px 10px rgba(212,166,84,0.5);
+  line-height: 1;
+}
+.footer-logo p{
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #d4a654;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+/* Social Icons */
+.footer-social{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 35px 0 45px;
+}
+.footer-social a{
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.footer-social a:hover{
+  color: #d4a654;
+  transform: translateY(-3px);
+}
+
+/* Download Text */
+.download-text{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+/* App Buttons */
+.app-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.app-btn{
+  border: 2px solid #d4a654;
+  border-radius: 8px;
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  min-width: 200px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(212,166,84,0.2);
+}
+.app-btn:hover{
+  background: rgba(212,166,84,0.15);
+  box-shadow: 0 0 25px rgba(212,166,84,0.4);
+  transform: translateY(-2px);
+}
+.app-btn i{
+  font-size: 34px;
+  color: #d4a654;
+}
+.app-btn-text{
+  text-align: left;
+  line-height: 1.1;
+}
+.app-btn-text span{
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.app-btn-text strong{
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #ffcc66;
+  margin-top: 2px;
+}
+
+/* Bottom Copyright */
+.footer-bottom{
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  opacity: 0.9;
+  color: #e0d5c5;
+  margin-top: 10px;
+}
+.footer-bottom a{
+  color: #e0d5c5;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-bottom a:hover{
+  color: #d4a654;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+  .footer-logo h1{ font-size: 36px; }
+  .download-text{ font-size: 16px; }
+  .app-buttons{ flex-direction: column; align-items: center; }
+}
+</style>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="Gemini_Generated_Image_sv7djesv7djesv7d.png" alt="Bootstrap" width="50" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Items
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Biryani">Biryani</a></li>
+            <li><a class="dropdown-item" href="#Parotta">Parotta</a>
+            </li><li><a class="dropdown-item" href="#Veg-Rice">Veg-Rice</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="fried Items.html">Fried Items</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About us.html">About US</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#">Catering</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="card text-center">
+  <div class="card-header">
+    Delighting Taste Buds, Creating Memories
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">SUPER FOODS CATERING</h1>
+    <p class="card-text" style="padding: 0% 12%;font-size: larger;">Catering Services
+Make your special occasions unforgettable with Super Foods Catering. Since 2003, we’ve brought our signature culinary expertise and authentic flavors to events of all sizes—from intimate family gatherings and birthday parties to grand weddings and corporate events. Our team works closely with you to curate custom menus featuring our rich biryanis, soft parottas, and delicious specialties, ensuring your guests enjoy freshly prepared, top-quality food served with unmatched hospitality.
+<br>
+<br>
+Let Super Foods handle the food so you can focus on enjoying your celebration!</p>
+  </div>
+  <br>
+</div>
+<div class="card text-center" style="padding: 0% 12%;">
+  <div class="card-header">
+   Book SUPER FOODS for Your Next Celebration!
+  </div>
+  <div class="card-body" style="font-size: 300%;font-weight: 700;">
+    <p class="card-title">Catering & Bulk Order Inquiry</p>
+  </div>
+  <div class="row">
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Full Name*</label>
+    <input type="text" class="form-control" placeholder="Eg: Iqbal Ahmed" aria-label="First name" style="border: none;border-bottom: 1px solid black;">
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Event Type*</label>
+    <select class="form-select" aria-label="Default select example" style="border: none;border-bottom: 1px solid black;">
+  <option selected>Select Event Type</option>
+  <option value="1">Wedding/Nikah/Reception</option>
+  <option value="2">Birthday Party</option>
+  <option value="3">Corporate Event/Meating</option>
+  <option value="2">Family Gathering/Function</option>
+  <option value="2">Bulk Bucket Biryani Order</option>
+  <option value="2">Other Special Occations</option>
+</select>
+  </div>
+</div>
+<form class="row g-3"><div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Email Address*</label>
+    <input type="Email" class="form-control" placeholder="eg:name@gmail.com" id="validationDefault03" required style="border: none;border-bottom: 1px solid black;">
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">Event Date*</label>
+   <input type="date" class="form-control"  aria-label="First name" style="border: none;border-bottom: 1px solid black;">
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Estimated Gusts*</label>
+    <input type="text" class="form-control" placeholder="eg: 150" id="validationDefault05" required style="border: none;border-bottom: 1px solid black;">
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="formGroupExampleInput" class="form-label">Mobile/WhatsApp Number</label>
+      <input type="text" class="form-control" placeholder="eg: +91 894*844651" aria-label="First name" style="border: none;border-bottom: 1px solid black;">
+    </div>
+    <div class="col">
+      <label for="formGroupExampleInput" class="form-label">Prefer Rice Type*</label>
+      <select class="form-select" aria-label="Default select example" style="border: none;border-bottom: 1px solid black;">
+        <option selected>No Preference/Both Option</option>
+        <option value="1">Traditional Zeera Samba Rice Biryani</option>
+        <option value="2">Classic Long-Grain Basmati Biryani </option>
+      </select>
+    </div>
+  </div><div class="row">
+    <div class="col">
+      <label for="formGroupExampleInput" class="form-label">Event Location Delivery City*</label>
+      <input type="text" class="form-control" placeholder="eg: Truppur,Pernambut" aria-label="First name" style="border: none;border-bottom: 1px solid black;">
+    </div>
+    <div class="col">
+      <!-- <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"> -->
+    </div>
+  </div><div class="row">
+    <div class="col">
+      <label for="formGroupExampleInput" class="form-label">Additional Requarments & Special Instruction*</label>
+      <br>
+      <br>
+      <br>
+      <input type="text" class="form-control" placeholder="Tell us about preferred dishes(chicken/Mutton Biryani,Starters,),delivery time,or special seating requirements..." aria-label="First name" style="border: none;border-bottom: 1px solid black;">
+    </div>
+    <div class="col">
+      <!-- <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"> -->
+    </div>
+  </div>
+  <div class="col-12">
+    <br>
+    <button class="btn btn-dark" type="submit">SUBMIT CATERING REQUEST</button>
+  </div>
+</div>
+</form>
+<div class="card text-center">
+    <br>
+  <div class="card-header">
+    Personalized Service You Can Trust
+  </div>
+  <div class="card-body">
+    <h1 class="card-title" style="font-size:55px;border: none;">CONTACT US</h1>
+    <p class="card-text" style="padding: 0% 12%;">At our core, we believe in delivering a personal and effective approach to every hospitality project we take on. This dedication ensures that our guests and patrons feel valued and cared for at every interaction. It’s this commitment to excellence that keeps our clients coming back time and again, trusting us to provide exceptional experiences every time.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0" style="padding:0px; margin: 0px;border: none;">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">SUPER FOODS HOTEL</h2>
+        <p class="card-text">Bazar Street,<br>
+            Pernambut,<br>
+            Tamil Nadu-635810,INDIA <br>
+            p:+91 894*844651
+        </p>
+        <a href="" class="btn btn-dark">GOOGLE MAP</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style="padding: 0px;margin: 0px;border: none;">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">SUPER FOODS RESTAURANT</h5>
+        <p class="card-text">28/B Railway Station Road,<br>
+Gandhi Road,<br>
+Tirupattur,<br>
+Tamil Nadu – 635601, INDIA <br>
+P: +91 894*844651</p>
+        <a href="" class="btn btn-dark">GOOGLE MAP</a>
+      </div>
+    </div>
+  </div>
+</div><div class="card text-center" style="border: none;">
+  <div class="card-body">
+    <p class="card-text" style="font-size: 480%;border: none;">CONTACT LEADERSHIP</p>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="justify-content: center;border: none;">
+  <div class="col" style="padding: 0px;">
+    <div class="card h-100" style="border: none;">
+      <div class="card-body" style="text-align-last: center;border: none;">
+        <p class="card-title" style="font-size:300%;">IQBAL</p>
+        <p class="card-text">CHAIRMAN</p>
+      </div>
+    </div>
+  </div>
+  <div class="col" style="padding: 0px;">
+    <div class="card h-100" style="border: none;">
+      <div class="card-body" style="text-align-last: center;">
+        <h5 class="card-title" style="font-size: 300%;">ALTHAF</h5>
+        <p class="card-text">MANAGING DIRECTOR</p>
+      </div>
+    </div>
+  </div>
+  <div class="col" style="padding: 0px;">
+    <div class="card h-100" style="border: none;">
+      <div class="card-body" style="text-align-last: center;">
+        <h5 class="card-title" style="font-size: 300%;">FAHMAN</h5>
+        <p class="card-text">DIRECTOR</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer-ahmedia">
+  <div class="footer-logo">
+    <h1>SUPER FOODS</h1>
+    <p>A LEGENDARY RESTAURANT</p>
+  </div>
+
+  <div class="footer-social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <div class="download-text">DOWNLOAD OUR APP FOR FREE</div>
+
+  <div class="app-buttons">
+    <a href="#" class="app-btn">
+      <i class="fab fa-apple"></i>
+      <div class="app-btn-text">
+        <span>ON THE APP STORE</span>
+        <strong>DOWNLOAD NOW</strong>
+      </div>
+    </a>
+
+    <a href="#" class="app-btn">
+      <i class="fab fa-google-play"></i>
+      <div class="app-btn-text">
+        <span>ON THE GOOGLE PLAY</span>
+        <strong>DOWNLOAD NOW</strong>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SUPER FOODS - A LEGENDARY RESTAURANT | <a href="#">TERMS & POLICIES</a> | <a href="#">PRIVACY POLICY</a>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

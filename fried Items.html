@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fried Item of SF</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+}
+
+.footer-ahmedia{
+  background: radial-gradient(ellipse at top left, #1a3a5f 0%, #0f0f1a 30%, #2a0a1a 70%, #3d1a3a 100%);
+  background-color: #120a1f;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo */
+.footer-logo h1{
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #d4a654;
+  text-shadow: 0 2px 10px rgba(212,166,84,0.5);
+  line-height: 1;
+}
+.footer-logo p{
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #d4a654;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+/* Social Icons */
+.footer-social{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 35px 0 45px;
+}
+.footer-social a{
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.footer-social a:hover{
+  color: #d4a654;
+  transform: translateY(-3px);
+}
+
+/* Download Text */
+.download-text{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+/* App Buttons */
+.app-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.app-btn{
+  border: 2px solid #d4a654;
+  border-radius: 8px;
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  min-width: 200px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(212,166,84,0.2);
+}
+.app-btn:hover{
+  background: rgba(212,166,84,0.15);
+  box-shadow: 0 0 25px rgba(212,166,84,0.4);
+  transform: translateY(-2px);
+}
+.app-btn i{
+  font-size: 34px;
+  color: #d4a654;
+}
+.app-btn-text{
+  text-align: left;
+  line-height: 1.1;
+}
+.app-btn-text span{
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.app-btn-text strong{
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #ffcc66;
+  margin-top: 2px;
+}
+
+/* Bottom Copyright */
+.footer-bottom{
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  opacity: 0.9;
+  color: #e0d5c5;
+  margin-top: 10px;
+}
+.footer-bottom a{
+  color: #e0d5c5;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-bottom a:hover{
+  color: #d4a654;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+  .footer-logo h1{ font-size: 36px; }
+  .download-text{ font-size: 16px; }
+  .app-buttons{ flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="Gemini_Generated_Image_sv7djesv7djesv7d.png" alt="Bootstrap" width="50" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Items
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Biryani">Biryani</a></li>
+            <li><a class="dropdown-item" href="#Parotta">Parotta</a>
+            </li><li><a class="dropdown-item" href="#Veg-Rice">Veg-Rice</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Fried Items</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About us.html">About US</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="Catering.html">Catering</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Fish and Chips (UK)-fish.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Midwestern US-fish fry.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Southeastern US-fish fry.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="card" id="Fish Fried">
+    <div class="card-header" style="align-self: center;font-size: 170%;">
+      Fish Fried
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="Machh Bhaja-fish.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Machh Bhaja-Fish</h5>
+            <p class="card-text">Machh bhaja (also spelled maach bhaja) is a traditional Bengali-style fish fry that
+              serves as a staple delicacy in West Bengal, Odisha, Assam, Tripura, and Bangladesh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Midwestern US-fish fry.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Midwester US-Fish</h5>
+            <p class="card-text">Freshwater fish are a significant part of the Midwest US diet and culture, particularly
+              in the Upper Midwest where species like walleye, perch, and crappie are highly prized. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Southeastern US-fish fry.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Southeastern US-fish</h5>
+            <p class="card-text">The Southeastern United States is a global hotspot for freshwater biodiversity,
+              containing the richest freshwater fish fauna on the North American continent north of Mexico.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Pescado Frito (Spain)-fish fry.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pescado Frito(Spain)-Fish</h5>
+            <p class="card-text">Pescado frito (also known as pescaíto frito) is a traditional Spanish dish of fried
+              fish originating from the southern coast, particularly Andalusia, though it is also popular in Catalonia,
+              Valencia, and the Balearic Islands</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="Sole Meunière (France)-fish.webp" class="card-img-top" alt="..." height="420">
+          <div class="card-body">
+            <h5 class="card-title">Sole Meunière (France)-fish</h5>
+            <p class="card-text">Sole meunière is a classic French dish consisting of sole (typically Dover sole or
+              lemon sole) that is lightly dredged in flour and pan-fried in butter until golden. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Ikan Goreng (Indonesia)-fish.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ikan Goreng (Indonesia)-fish</h5>
+            <p class="card-text">kan goreng is a popular Southeast Asian dish, particularly in Indonesia, Malaysia,
+              Singapore, and Brunei, consisting of fish or seafood that is marinated in spices and deep-fried until
+              golden and crispy.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      </div>
+      <div class="card text-center" id="Fried Chicken" style="width: 100%;">
+        <div class="card-header" style="font-size: 270%;">
+          FRIED CHICKEN
+        </div>
+        <div class="card-body">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="crispy skin-chicken.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Crispy Skin</h5>
+                  <p class="card-text">Achieving perfectly crispy chicken skin relies on three core principles: removing moisture, rendering fat, and applying steady, high heat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="Nashville hot chicken (US).webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nashville hot Chicken(US)</h5>
+                  <p class="card-text">Nashville hot chicken is a style of fried chicken that is marinated, breaded, deep-fried, and
+then coated in a spicy paste or sauce primarily made from cayenne pepper, lard or butter, and other spices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="Southern fried chicken (US)-chicken.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Southern fried chicken(US)</h5>
+                  <p class="card-text">Southern fried chicken is a dish consisting of chicken pieces
+coated in seasoned flour or batter and fried in fat, recognized as a staple of American Southern cuisine.,
+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="and Korean fried chicken.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Korean Fried Chicken</h5>
+                <p class="card-text">The dish is distinguished by its double-frying process and the use of potato starch or
+cornstarch in the batter, which creates a crackly texture that remains crunchy even after being coated in sauce.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="Ganjang (soy garlic).-chicken.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ganjang(soy garlic) Chicken</h5>
+                <p class="card-text">Ganjang (간장) is the Korean term for soy sauce, a fundamental fermented seasoning made from
+soybeans, salt, and water that provides deep umami and salinity to Korean cuisine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="chicken lolipop.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Loli-Pop</h5>
+                <p class="card-text">The preparation typically involves marinating the shaped chicken in a spicy blend of ginger, garlic, soy sauce, and chili, then coating it in a batter of cornflour and all-purpose flour.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="coated in cayenne pepper paste-Chicken.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">cayenne pepper past Chicken</h5>
+                  <p class="card-text">The Chicken Paste Recipe is a versatile, concentrated flavor base made by combining
+aromatic spices with tender chicken, designed to elevate curries, marinades, and stews.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="marinated in buttermilk and pan-fried Chicken.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buttermilk and Pan-Fried Chicken</h5>
+                  <p class="card-text">Buttermilk marinade tenderizes chicken and creates a crispy, flaky crust because
+its acidity breaks down proteins while its thickness helps flour adhere.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+            <div class="card h-100">
+              <img src="glazes like Yangnyeom (spicy)-chicken.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Glazs Spicy Chicken</h5>
+                <p class="card-text">is a traditional Korean seasoning style that, in the context of fried
+chicken, refers to a glossy, sweet-and-spicy red glaze.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+<div class="card text-center" id="Toasted Meats">
+  <br>
+  <div class="card-header" style="font-size: 270%;">
+    Toasted Meats
+  </div>
+  <br>
+  <div class="card-body">
+    <h2 class="card-title">Chicken</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="Chicken breast (lean, low-calorie option).webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chicken Breast</h5>
+        <p class="card-text">Chicken breast in a toaster oven is a quick method for cooking small batches, typically requiring 350°F and 15–35 minutes depending on thickness. To ensure juiciness, slice thick breasts in half widthwise or pound them to an even thickness before seasoning with oil and spices. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="chicken pies.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chicken leg pies(Toasted)</h5>
+        <p class="card-text">Chicken Leg Toast is a savory breakfast or brunch dish, distinct from traditional baked chicken pies, that features thick slices of day-old French bread soaked in an eggy batter and topped with a whole chicken drumstick.p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <br>
+  <div class="card-body">
+    <h2 class="card-title">Beef brisket</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="Beef brisket ( grilled).webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Beef Brisket(grilled)</h5>
+        <p class="card-text">Beef brisket is a tough cut from the chest of the cow that requires low-and-slow cooking to become tender, as its high connective tissue content needs time to break down. p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="Beef brisket(often smoked)2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Beef brisket(often smoked)</h5>
+        <p class="card-text">Beef brisket is a tough, collagen-rich primal cut from the lower chest or breast of the cow, composed of the leaner flat and the fattier, more marbled point.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+<div class="card-body">
+    <h2 class="card-title">Lamb</h2>
+    <br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="Lamb (sliced for gyros ).webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lamb(Sliced Gyros)</h5>
+        <p class="card-text">Toasted lamb gyros are typically made by baking seasoned ground lamb into a loaf, slicing it thinly, and then broiling or pan-frying the slices until the edges are crispy and browned. This method replicates the texture of meat cooked on a vertical rotisserie, offering a contrast between the crispy exterior and the juicy interior.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="Lamb ( sandwiches).webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">Lamb Sandwich</h2>
+        <p class="card-text">Toasted lamb sandwiches typically utilize slow-roasted, braised, or leftover lamb shoulder to ensure tender, shreddable meat that pairs well with melted cheese and warm bread.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div><footer class="footer-ahmedia">
+  <div class="footer-logo">
+    <h1>SUPER FOODS</h1>
+    <p>A LEGENDARY RESTAURANT</p>
+  </div>
+
+  <div class="footer-social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <div class="download-text">DOWNLOAD OUR APP FOR FREE</div>
+
+  <div class="app-buttons">
+    <a href="#" class="app-btn">
+      <i class="fab fa-apple"></i>
+      <div class="app-btn-text">
+        <span>ON THE APP STORE</span>
+        <strong>DOWNLOAD NOW</strong>
+      </div>
+    </a>
+
+    <a href="#" class="app-btn">
+      <i class="fab fa-google-play"></i>
+      <div class="app-btn-text">
+        <span>ON THE GOOGLE PLAY</span>
+        <strong>DOWNLOAD NOW</strong>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SUPER FOODS - A LEGENDARY RESTAURANT | <a href="#">TERMS & POLICIES</a> | <a href="#">PRIVACY POLICY</a>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
